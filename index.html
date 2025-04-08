@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get My Location with Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📍 Get My Current Location</h1>
+  <button id="getLocationBtn" onclick="getLocation()">Get Location</button>
+
+  <div class="location-display" id="locationInfo" style="display: none;">
+    <p><strong>Latitude:</strong> <span id="location_lat"></span></p>
+    <p><strong>Longitude:</strong> <span id="location_long"></span></p>
+    <p><strong>Accuracy:</strong> <span id="location_accuracy"></span> meters</p>
+    <button id="mapBtn" onclick="openMap()" style="display: none;">🌐 Open in Google Maps</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
